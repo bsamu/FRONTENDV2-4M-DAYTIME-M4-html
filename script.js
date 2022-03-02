@@ -54,11 +54,13 @@ let arr = [
 const creator = (item) => {
     return `
         <div class="card">
-            <div class="index">${arr.indexOf(item) + 1}</div>
-            <h2 class="title">${item.title}</h2>
-            <div class="sub">${item.sub}</div>
-            <div class="text">${item.text}</div>
-            <button><span class="buttonText">read more</span><span class="arrow material-icons">arrow_forward</span></button>
+            <div class="subCard">
+                <div class="index">${arr.indexOf(item) + 1}</div>
+                <div class="sub">${item.sub}</div>
+                <h2 class="title">${item.title}</h2>
+                <div class="text">${item.text}</div>
+            </div>
+            <button button ><span class="buttonText">read more</span><span class="arrow material-icons">arrow_forward</span></button>
         </div>`
 }
 
